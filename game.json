@@ -1,0 +1,179 @@
+{
+  "board": {
+    "board": [
+      [
+        {
+          "isKing": true,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        null,
+        null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        }
+      ],
+      [
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        {
+          "isKing": true,
+          "color": "BLACK",
+          "list": []
+        },
+        null,
+        null,
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        }
+      ]
+    ],
+    "piecePositions": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        7,
+        7
+      ]
+    ]
+  },
+  "currentPlayer": "RED",
+  "redCaptured": 5,
+  "blackCaptured": 8
+}
