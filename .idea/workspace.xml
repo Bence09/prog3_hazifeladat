@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bb745ed-5924-46cf-af64-e664f62e3f54" name="Changes" comment="setup maven project">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CheckersJUnitTests.java" afterDir="false" />
+    <list default="true" id="9bb745ed-5924-46cf-af64-e664f62e3f54" name="Changes" comment="Test cases added">
+      <change afterPath="$PROJECT_DIR$/resources/help.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CheckersJUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CheckersJUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Game",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,8 +54,21 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CheckersJUnitTests">
-    <configuration name="CheckersJUnitTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.GameFrame">
+    <configuration name="GameFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.GameFrame" />
+      <module name="checkers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckersJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="checkers" />
       <extension name="coverage">
         <pattern>
@@ -68,14 +81,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CheckersJUnitTests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckersJUnitTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckersJUnitTests.testCheckerBoardGetPiece" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckersJUnitTest.testFileLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="checkers" />
       <extension name="coverage">
         <pattern>
@@ -84,14 +97,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CheckersJUnitTests" />
-      <option name="METHOD_NAME" value="testCheckerBoardGetPiece" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckersJUnitTest" />
+      <option name="METHOD_NAME" value="testFileLoad" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckersJUnitTests.testCheckerBoardMovePiece" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckersJUnitTest.testFileSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="checkers" />
       <extension name="coverage">
         <pattern>
@@ -100,14 +113,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CheckersJUnitTests" />
-      <option name="METHOD_NAME" value="testCheckerBoardMovePiece" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckersJUnitTest" />
+      <option name="METHOD_NAME" value="testFileSave" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckersJUnitTests.testGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckersJUnitTest.testGraphic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="checkers" />
       <extension name="coverage">
         <pattern>
@@ -116,24 +129,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CheckersJUnitTests" />
-      <option name="METHOD_NAME" value="testGame" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckersJUnitTests.testGameMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="checkers" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CheckersJUnitTests" />
-      <option name="METHOD_NAME" value="testGameMove" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckersJUnitTest" />
+      <option name="METHOD_NAME" value="testGraphic" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GameFrame" />
         <item itemvalue="JUnit.CheckersJUnitTests" />
-        <item itemvalue="JUnit.CheckersJUnitTests.testGameMove" />
-        <item itemvalue="JUnit.CheckersJUnitTests.testGame" />
-        <item itemvalue="JUnit.CheckersJUnitTests.testCheckerBoardMovePiece" />
-        <item itemvalue="JUnit.CheckersJUnitTests.testCheckerBoardGetPiece" />
+        <item itemvalue="JUnit.CheckersJUnitTest.testGraphic" />
+        <item itemvalue="JUnit.CheckersJUnitTest.testFileSave" />
+        <item itemvalue="JUnit.CheckersJUnitTest.testFileLoad" />
       </list>
     </recent_temporary>
   </component>
@@ -158,8 +155,17 @@
       <option name="presentableId" value="Default" />
       <updated>1732369341407</updated>
       <workItem from="1732369342523" duration="854000" />
-      <workItem from="1732370215532" duration="1456000" />
+      <workItem from="1732370215532" duration="3420000" />
     </task>
+    <task id="LOCAL-00001" summary="Test cases added">
+      <option name="closed" value="true" />
+      <created>1732371693102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732371693102</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,13 +184,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup maven project" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup maven project" />
+    <MESSAGE value="Test cases added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test cases added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/checkers$CheckersJUnitTests_testGameMove.ic" NAME="CheckersJUnitTests.testGameMove Coverage Results" MODIFIED="1732371630979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>tests.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/checkers$CheckersJUnitTests.ic" NAME="CheckersJUnitTests Coverage Results" MODIFIED="1732371657194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/checkers$CheckersJUnitTests.ic" NAME="CheckersJUnitTests Coverage Results" MODIFIED="1732373028724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>tests.*</FILTER>
       <FILTER>game.*</FILTER>
     </SUITE>

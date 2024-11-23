@@ -1,0 +1,24 @@
+1. Objective:
+   - The goal of the game is to capture all of your opponent's pieces or block them so they cannot make a move.
+
+2. Setup:
+   - The game is played on an 8x8 board with alternating dark and light squares.
+   - Each player starts with 12 pieces placed on the dark squares of the first three rows closest to them.
+
+3. Movement:
+   - Pieces can only move diagonally forward to an adjacent empty square.
+   - If a piece reaches the farthest row from its starting position, it is promoted to a "king."
+
+4. Kings:
+   - Kings can move diagonally both forward and backward.
+   - To indicate a piece is a king, place another piece on top of it or flip it over.
+
+5. Capturing:
+   - If an opponent's piece is adjacent to a player's piece and there is an empty square directly on the other side, 
+the player must jump over the opponent's piece and capture it.
+
+6. Mandatory Captures:
+   - If a capture move is available, the player must take it.
+
+7. Winning the Game:
+   - A player wins by capturing all the opponent's pieces or blocking them so they cannot make a move.

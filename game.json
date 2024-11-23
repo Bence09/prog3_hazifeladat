@@ -3,12 +3,16 @@
     "board": [
       [
         {
-          "isKing": true,
-          "color": "RED",
+          "isKing": false,
+          "color": "BLACK",
           "list": []
         },
         null,
-        null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
         null,
         {
           "isKing": false,
@@ -25,11 +29,23 @@
       ],
       [
         null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
         null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
         null,
-        null,
-        null,
-        null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
         null,
         {
           "isKing": false,
@@ -38,86 +54,122 @@
         }
       ],
       [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        null,
-        null,
         {
           "isKing": false,
-          "color": "RED",
-          "list": []
-        },
-        null,
-        {
-          "isKing": false,
-          "color": "RED",
-          "list": []
-        }
-      ],
-      [
-        null,
-        null,
-        null,
-        null,
-        {
-          "isKing": false,
-          "color": "RED",
-          "list": []
-        },
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        {
-          "isKing": false,
-          "color": "RED",
-          "list": []
-        }
-      ],
-      [
-        {
-          "isKing": false,
-          "color": "RED",
-          "list": []
-        },
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null,
-        {
-          "isKing": true,
           "color": "BLACK",
           "list": []
         },
         null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
         null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        }
+      ],
+      [
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null
+      ],
+      [
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
+        null,
+        {
+          "isKing": false,
+          "color": "RED",
+          "list": []
+        },
         null,
         {
           "isKing": false,
@@ -133,6 +185,10 @@
       ],
       [
         0,
+        2
+      ],
+      [
+        0,
         4
       ],
       [
@@ -140,16 +196,48 @@
         6
       ],
       [
-        7,
+        1,
+        1
+      ],
+      [
+        1,
         3
+      ],
+      [
+        1,
+        5
       ],
       [
         1,
         7
       ],
       [
-        3,
-        7
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        5
       ],
       [
         5,
@@ -160,11 +248,27 @@
         0
       ],
       [
-        4,
+        6,
+        2
+      ],
+      [
+        6,
         4
       ],
       [
-        3,
+        6,
+        6
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        7,
         5
       ],
       [
@@ -174,6 +278,6 @@
     ]
   },
   "currentPlayer": "RED",
-  "redCaptured": 5,
-  "blackCaptured": 8
+  "redCaptured": 0,
+  "blackCaptured": 0
 }

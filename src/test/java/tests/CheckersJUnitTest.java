@@ -6,7 +6,10 @@ import org.junit.*;
 import java.util.*;
 import game.*;
 
-public class CheckersJUnitTests {
+import javax.swing.*;
+import java.io.File;
+
+public class CheckersJUnitTest {
     private CheckerBoard board;
     private CheckerPiece redPiece;
     private CheckerPiece blackPiece;
@@ -86,7 +89,6 @@ public class CheckersJUnitTests {
         assertNull(piece);
     }
 
-    //test game class
     @Test
     public void testGame() {
         Game game = new Game();
@@ -106,6 +108,31 @@ public class CheckersJUnitTests {
         game.move(5, 0, 4, 1);
         assertNull(game.getBoard().getPiece(5, 0));
         assertEquals("RED", game.getCurrentPlayer());
+    }
+
+    @Test
+    public void testFileSave() {
+        Game game = new Game();
+        game.move(2, 1, 3, 0);
+        game.move(5, 0, 4, 1);
+        game.saveGame();
+
+        File savedFile = new File("game.json");
+        assertTrue(savedFile.exists());
+    }
+
+    @Test
+    public void testGraphic() {
+        //create a window and check if it is visible
+        SwingUtilities.invokeLater(() -> new GameFrame().setVisible(true));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        assertFalse(JFrame.getFrames()[0].isResizable());
+
     }
 
 }
