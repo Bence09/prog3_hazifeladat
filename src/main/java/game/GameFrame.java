@@ -94,6 +94,7 @@ public class GameFrame extends JFrame {
                     updateLabels();
                     revalidate();
                     repaint();
+                    JOptionPane.showMessageDialog(GameFrame.this, "Game loaded successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
                 } else {
                     JOptionPane.showMessageDialog(GameFrame.this, "Error loading game", "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -108,6 +109,7 @@ public class GameFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 game.saveGame();
+                JOptionPane.showMessageDialog(GameFrame.this, "Game saved successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
