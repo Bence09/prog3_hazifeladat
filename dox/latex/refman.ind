@@ -1,0 +1,12 @@
+\begin{theindex}
+
+  \item {CheckerBoard}
+    \subitem {game.CheckerBoard}, 11
+
+  \indexspace
+
+  \item {game}, 9
+  \item {game.CheckerBoard}, 11
+    \subitem {CheckerBoard}, 11
+
+\end{theindex}

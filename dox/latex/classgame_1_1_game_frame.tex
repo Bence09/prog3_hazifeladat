@@ -1,0 +1,57 @@
+\doxysection{game.\+Game\+Frame Class Reference}
+\label{classgame_1_1_game_frame}\index{game.GameFrame@{game.GameFrame}}
+Inheritance diagram for game.\+Game\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgame_1_1_game_frame}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Game\+Frame} ()
+\item 
+void \textbf{ update\+Labels} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ main} (String[$\,$] args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Game\+Frame class represents the main frame of the game. It extends the JFrame class and contains a Game object to represent the game, a Checker\+Board\+Panel object to display the checkerboard, and JLabels to display information about the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classgame_1_1_game_frame_aa491ba667d2a22f17d3b0e01e06d54e8} 
+\index{game.GameFrame@{game.GameFrame}!GameFrame@{GameFrame}}
+\index{GameFrame@{GameFrame}!game.GameFrame@{game.GameFrame}}
+\doxysubsubsection{GameFrame()}
+{\footnotesize\ttfamily game.\+Game\+Frame.\+Game\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a new Game\+Frame object with a new Game object and a new Checker\+Board\+Panel object. The frame is set up with a title, size, default close operation, layout, and menu bar. 
+
+\doxysubsection{Member Function Documentation}
+\label{classgame_1_1_game_frame_aef43175ae701412f56d494cc588bb1e4} 
+\index{game.GameFrame@{game.GameFrame}!main@{main}}
+\index{main@{main}!game.GameFrame@{game.GameFrame}}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily static void game.\+Game\+Frame.\+main (\begin{DoxyParamCaption}\item[{String[$\,$]}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new Game\+Frame object and sets it to be visible. 
+\begin{DoxyParams}{Parameters}
+{\em args} & the command-\/line arguments \\
+\hline
+\end{DoxyParams}
+\label{classgame_1_1_game_frame_a60c995f78b801bd2704814c3446b3a94} 
+\index{game.GameFrame@{game.GameFrame}!updateLabels@{updateLabels}}
+\index{updateLabels@{updateLabels}!game.GameFrame@{game.GameFrame}}
+\doxysubsubsection{updateLabels()}
+{\footnotesize\ttfamily void game.\+Game\+Frame.\+update\+Labels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the labels to display the current player and the number of captured pieces for each player. If the game is over, a message dialog is displayed with the winner. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/game/\textbf{ Game\+Frame.\+java}\end{DoxyCompactItemize}

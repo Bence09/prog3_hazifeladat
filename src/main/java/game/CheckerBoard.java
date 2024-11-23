@@ -86,8 +86,6 @@ public class CheckerBoard {
                 || endX == 7 && board[endX][endY].getColor().equals("BLACK")) {
             board[endX][endY].crown();
         }
-
-        printList();
     }
 
     /**

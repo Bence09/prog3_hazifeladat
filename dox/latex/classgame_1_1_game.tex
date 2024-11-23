@@ -1,0 +1,156 @@
+\doxysection{game.\+Game Class Reference}
+\label{classgame_1_1_game}\index{game.Game@{game.Game}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Game} ()
+\item 
+\textbf{ Checker\+Board} \textbf{ get\+Board} ()
+\item 
+String \textbf{ get\+Current\+Player} ()
+\item 
+void \textbf{ switch\+Player} ()
+\item 
+boolean \textbf{ move} (int startX, int startY, int endX, int endY)
+\item 
+int \textbf{ get\+Red\+Captured} ()
+\item 
+int \textbf{ get\+Black\+Captured} ()
+\item 
+boolean \textbf{ is\+End\+Game} ()
+\item 
+String \textbf{ get\+Winner} ()
+\item 
+void \textbf{ save\+Game} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \textbf{ get\+End\+Game} ()
+\item 
+static \textbf{ Game} \textbf{ load\+Game} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Game class represents a game of checkers. The game has a Checker\+Board object to represent the board, a current\+Player field to keep track of the current player, and red\+Captured and black\+Captured fields to keep track of the number of pieces captured by each player. It also has a static end\+Game field to keep track of whether the game has ended. The class has methods to get the board, get the current player, switch the current player, move a piece on the board, get the number of pieces captured by each player, check if the game has ended, get the winner, and save and load the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classgame_1_1_game_a901aa8c93a570f54854a9f08118a9451} 
+\index{game.Game@{game.Game}!Game@{Game}}
+\index{Game@{Game}!game.Game@{game.Game}}
+\doxysubsubsection{Game()}
+{\footnotesize\ttfamily game.\+Game.\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a new Game object with a new Checker\+Board, the current player set to "{}\+RED"{}, and the number of pieces captured by each player set to 0. The end\+Game field is set to false. 
+
+\doxysubsection{Member Function Documentation}
+\label{classgame_1_1_game_ae55bf3b7a9f78860a1e652dd07530be6} 
+\index{game.Game@{game.Game}!getBlackCaptured@{getBlackCaptured}}
+\index{getBlackCaptured@{getBlackCaptured}!game.Game@{game.Game}}
+\doxysubsubsection{getBlackCaptured()}
+{\footnotesize\ttfamily int game.\+Game.\+get\+Black\+Captured (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of black pieces captured. \begin{DoxyReturn}{Returns}
+the number of black pieces captured 
+\end{DoxyReturn}
+\label{classgame_1_1_game_afbb4d90d1ab34ba2df1809f6b160cfb9} 
+\index{game.Game@{game.Game}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!game.Game@{game.Game}}
+\doxysubsubsection{getBoard()}
+{\footnotesize\ttfamily \textbf{ Checker\+Board} game.\+Game.\+get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the Checker\+Board object representing the board of the game. \begin{DoxyReturn}{Returns}
+the Checker\+Board object 
+\end{DoxyReturn}
+\label{classgame_1_1_game_abc73905586446a492de3513b3e57bdca} 
+\index{game.Game@{game.Game}!getCurrentPlayer@{getCurrentPlayer}}
+\index{getCurrentPlayer@{getCurrentPlayer}!game.Game@{game.Game}}
+\doxysubsubsection{getCurrentPlayer()}
+{\footnotesize\ttfamily String game.\+Game.\+get\+Current\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current player. \begin{DoxyReturn}{Returns}
+the current player 
+\end{DoxyReturn}
+\label{classgame_1_1_game_a225497b955724096b78fa6bdfaf441f0} 
+\index{game.Game@{game.Game}!getEndGame@{getEndGame}}
+\index{getEndGame@{getEndGame}!game.Game@{game.Game}}
+\doxysubsubsection{getEndGame()}
+{\footnotesize\ttfamily static boolean game.\+Game.\+get\+End\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the value of the end\+Game field. \begin{DoxyReturn}{Returns}
+the value of the end\+Game field 
+\end{DoxyReturn}
+\label{classgame_1_1_game_a0a334eea2db03cd65615837b012b4136} 
+\index{game.Game@{game.Game}!getRedCaptured@{getRedCaptured}}
+\index{getRedCaptured@{getRedCaptured}!game.Game@{game.Game}}
+\doxysubsubsection{getRedCaptured()}
+{\footnotesize\ttfamily int game.\+Game.\+get\+Red\+Captured (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of red pieces captured. \begin{DoxyReturn}{Returns}
+the number of red pieces captured 
+\end{DoxyReturn}
+\label{classgame_1_1_game_a95de1038d08d7679caa0297c48a6ee7c} 
+\index{game.Game@{game.Game}!getWinner@{getWinner}}
+\index{getWinner@{getWinner}!game.Game@{game.Game}}
+\doxysubsubsection{getWinner()}
+{\footnotesize\ttfamily String game.\+Game.\+get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the winner of the game. The winner is the player with all pieces captured or the other player if the current player has no possible moves. \begin{DoxyReturn}{Returns}
+the winner of the game 
+\end{DoxyReturn}
+\label{classgame_1_1_game_a2f55988dd9da8e03429b164d38ac09c1} 
+\index{game.Game@{game.Game}!isEndGame@{isEndGame}}
+\index{isEndGame@{isEndGame}!game.Game@{game.Game}}
+\doxysubsubsection{isEndGame()}
+{\footnotesize\ttfamily boolean game.\+Game.\+is\+End\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if the game has ended. The game has ended if all pieces of one color are taken or if the current player has no possible moves. \begin{DoxyReturn}{Returns}
+true if the game has ended, false otherwise 
+\end{DoxyReturn}
+\label{classgame_1_1_game_a6d4e4d61b729aa2ab4a0881ca3b1fc50} 
+\index{game.Game@{game.Game}!loadGame@{loadGame}}
+\index{loadGame@{loadGame}!game.Game@{game.Game}}
+\doxysubsubsection{loadGame()}
+{\footnotesize\ttfamily static \textbf{ Game} game.\+Game.\+load\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads a game from a JSON file. \begin{DoxyReturn}{Returns}
+the loaded Game object 
+\end{DoxyReturn}
+\label{classgame_1_1_game_a26ef4a1095e807e496ed00db795ef6e4} 
+\index{game.Game@{game.Game}!move@{move}}
+\index{move@{move}!game.Game@{game.Game}}
+\doxysubsubsection{move()}
+{\footnotesize\ttfamily boolean game.\+Game.\+move (\begin{DoxyParamCaption}\item[{int}]{startX,  }\item[{int}]{startY,  }\item[{int}]{endX,  }\item[{int}]{endY }\end{DoxyParamCaption})}
+
+Moves a piece on the board from the start position to the end position. If the move is valid, the piece is moved, and the current player is switched. If a piece is captured, the number of pieces captured by the corresponding player is incremented. If the game has ended, the end\+Game field is set to true. 
+\begin{DoxyParams}{Parameters}
+{\em startX} & the x-\/coordinate of the start position \\
+\hline
+{\em startY} & the y-\/coordinate of the start position \\
+\hline
+{\em endX} & the x-\/coordinate of the end position \\
+\hline
+{\em endY} & the y-\/coordinate of the end position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is valid and the piece is moved, false otherwise 
+\end{DoxyReturn}
+\label{classgame_1_1_game_a71d5ccb8dc40637497df8d52cbd8b37d} 
+\index{game.Game@{game.Game}!saveGame@{saveGame}}
+\index{saveGame@{saveGame}!game.Game@{game.Game}}
+\doxysubsubsection{saveGame()}
+{\footnotesize\ttfamily void game.\+Game.\+save\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Saves the game to a JSON file. \label{classgame_1_1_game_a3c7177afa126325cc2d6366fb402cc28} 
+\index{game.Game@{game.Game}!switchPlayer@{switchPlayer}}
+\index{switchPlayer@{switchPlayer}!game.Game@{game.Game}}
+\doxysubsubsection{switchPlayer()}
+{\footnotesize\ttfamily void game.\+Game.\+switch\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Switches the current player. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/game/\textbf{ Game.\+java}\end{DoxyCompactItemize}

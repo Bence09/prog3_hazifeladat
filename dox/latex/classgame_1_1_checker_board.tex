@@ -1,0 +1,160 @@
+\doxysection{game.\+Checker\+Board Class Reference}
+\label{classgame_1_1_checker_board}\index{game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Checker\+Board} ()
+\item 
+\textbf{ Checker\+Piece} \textbf{ get\+Piece} (int x, int y)
+\item 
+void \textbf{ move\+Piece} (int startX, int startY, int endX, int endY)
+\item 
+List$<$ int[$\,$]$>$ \textbf{ get\+Possible\+Moves} (int x, int y)
+\item 
+boolean \textbf{ is\+Move\+Valid} (int startX, int startY, int endX, int endY)
+\item 
+void \textbf{ print\+List} ()
+\item 
+\textbf{ Checker\+Piece}[$\,$][$\,$] \textbf{ get\+Board} ()
+\item 
+void \textbf{ set\+Board} (\textbf{ Checker\+Piece}[$\,$][$\,$] board)
+\item 
+void \textbf{ reconstruct\+Piece\+Positions} ()
+\item 
+boolean \textbf{ has\+Capture\+Moves} (String color)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Checker\+Board class represents the board of a checkers game. The board is a 8x8 grid of Checker\+Piece objects. The class has methods to get a piece at a given position, move a piece, get possible moves for a piece, check if a move is valid, and check if there are any capture moves available for a player. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classgame_1_1_checker_board_a78e6eaab74091f9bb54015ecf23a74e1} 
+\index{game.CheckerBoard@{game.CheckerBoard}!CheckerBoard@{CheckerBoard}}
+\index{CheckerBoard@{CheckerBoard}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{CheckerBoard()}
+{\footnotesize\ttfamily game.\+Checker\+Board.\+Checker\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a new Checker\+Board object and initializes the board with pieces in their starting positions. 
+
+\doxysubsection{Member Function Documentation}
+\label{classgame_1_1_checker_board_a6db46743b756f50bcbb4b78f87e533ac} 
+\index{game.CheckerBoard@{game.CheckerBoard}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{getBoard()}
+{\footnotesize\ttfamily \textbf{ Checker\+Piece}[$\,$][$\,$] game.\+Checker\+Board.\+get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of piece positions on the board. \begin{DoxyReturn}{Returns}
+the list of piece positions on the board 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_board_ad6960c06dc4a584851c163a3c2982a00} 
+\index{game.CheckerBoard@{game.CheckerBoard}!getPiece@{getPiece}}
+\index{getPiece@{getPiece}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{getPiece()}
+{\footnotesize\ttfamily \textbf{ Checker\+Piece} game.\+Checker\+Board.\+get\+Piece (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Returns the piece at the given position on the board. 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the position \\
+\hline
+{\em y} & the y-\/coordinate of the position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the piece at the given position, or null if there is no piece 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_board_a5a79d72286f49850d33614b121b1989c} 
+\index{game.CheckerBoard@{game.CheckerBoard}!getPossibleMoves@{getPossibleMoves}}
+\index{getPossibleMoves@{getPossibleMoves}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{getPossibleMoves()}
+{\footnotesize\ttfamily List$<$ int[$\,$]$>$ game.\+Checker\+Board.\+get\+Possible\+Moves (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Returns a list of possible moves for the piece at the given position on the board. 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the position \\
+\hline
+{\em y} & the y-\/coordinate of the position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of possible moves for the piece at the given position 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_board_a6ddf9a4a4736c113f243638c5d12f5f7} 
+\index{game.CheckerBoard@{game.CheckerBoard}!hasCaptureMoves@{hasCaptureMoves}}
+\index{hasCaptureMoves@{hasCaptureMoves}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{hasCaptureMoves()}
+{\footnotesize\ttfamily boolean game.\+Checker\+Board.\+has\+Capture\+Moves (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})}
+
+Checks if there are any capture moves available for a player of the given color. 
+\begin{DoxyParams}{Parameters}
+{\em color} & the color of the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there are capture moves available, false otherwise 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_board_ad080162e80ed97e053729217acf35a1c} 
+\index{game.CheckerBoard@{game.CheckerBoard}!isMoveValid@{isMoveValid}}
+\index{isMoveValid@{isMoveValid}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{isMoveValid()}
+{\footnotesize\ttfamily boolean game.\+Checker\+Board.\+is\+Move\+Valid (\begin{DoxyParamCaption}\item[{int}]{startX,  }\item[{int}]{startY,  }\item[{int}]{endX,  }\item[{int}]{endY }\end{DoxyParamCaption})}
+
+Checks if a move from the start position to the end position is valid. 
+\begin{DoxyParams}{Parameters}
+{\em startX} & the x-\/coordinate of the start position \\
+\hline
+{\em startY} & the y-\/coordinate of the start position \\
+\hline
+{\em endX} & the x-\/coordinate of the end position \\
+\hline
+{\em endY} & the y-\/coordinate of the end position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is valid, false otherwise 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_board_ac18466aeaff26d43238b8264d80df282} 
+\index{game.CheckerBoard@{game.CheckerBoard}!movePiece@{movePiece}}
+\index{movePiece@{movePiece}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{movePiece()}
+{\footnotesize\ttfamily void game.\+Checker\+Board.\+move\+Piece (\begin{DoxyParamCaption}\item[{int}]{startX,  }\item[{int}]{startY,  }\item[{int}]{endX,  }\item[{int}]{endY }\end{DoxyParamCaption})}
+
+Moves a piece from the start position to the end position on the board. Handles capturing of pieces and promotion to king. 
+\begin{DoxyParams}{Parameters}
+{\em startX} & the x-\/coordinate of the start position \\
+\hline
+{\em startY} & the y-\/coordinate of the start position \\
+\hline
+{\em endX} & the x-\/coordinate of the end position \\
+\hline
+{\em endY} & the y-\/coordinate of the end position \\
+\hline
+\end{DoxyParams}
+\label{classgame_1_1_checker_board_a8ad6a19485f029e03f76648ef9c3b1cc} 
+\index{game.CheckerBoard@{game.CheckerBoard}!printList@{printList}}
+\index{printList@{printList}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{printList()}
+{\footnotesize\ttfamily void game.\+Checker\+Board.\+print\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the positions of the pieces on the board. \label{classgame_1_1_checker_board_af455aaef41aadf2e39dc00c5db052a44} 
+\index{game.CheckerBoard@{game.CheckerBoard}!reconstructPiecePositions@{reconstructPiecePositions}}
+\index{reconstructPiecePositions@{reconstructPiecePositions}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{reconstructPiecePositions()}
+{\footnotesize\ttfamily void game.\+Checker\+Board.\+reconstruct\+Piece\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Rebuilds the list of piece positions on the board. This method should be called after moving a piece to update the list of piece positions. \label{classgame_1_1_checker_board_ab80a01e811392690e4799f171dcc78fc} 
+\index{game.CheckerBoard@{game.CheckerBoard}!setBoard@{setBoard}}
+\index{setBoard@{setBoard}!game.CheckerBoard@{game.CheckerBoard}}
+\doxysubsubsection{setBoard()}
+{\footnotesize\ttfamily void game.\+Checker\+Board.\+set\+Board (\begin{DoxyParamCaption}\item[{\textbf{ Checker\+Piece}}]{board[$\,$][$\,$] }\end{DoxyParamCaption})}
+
+Sets the board to the given board. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board to set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/game/\textbf{ Checker\+Board.\+java}\end{DoxyCompactItemize}

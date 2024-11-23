@@ -1,0 +1,106 @@
+\doxysection{game.\+Checker\+Piece Class Reference}
+\label{classgame_1_1_checker_piece}\index{game.CheckerPiece@{game.CheckerPiece}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Checker\+Piece} (String color)
+\item 
+void \textbf{ set\+List} (List$<$ int[$\,$]$>$ list)
+\item 
+List$<$ int[$\,$]$>$ \textbf{ get\+List} ()
+\item 
+String \textbf{ get\+Color} ()
+\item 
+boolean \textbf{ is\+King} ()
+\item 
+void \textbf{ crown} ()
+\item 
+List$<$ int[$\,$]$>$ \textbf{ get\+Possible\+Moves} (int x, int y, \textbf{ Checker\+Board} board)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Checker\+Piece class represents a piece on the checkerboard. Each piece has a color ("{}\+RED"{} or "{}\+BLACK"{}) and a boolean flag to indicate if it is a king. The class has methods to get and set the color, check if the piece is a king, crown the piece as a king, get the possible moves for the piece, and get the list of possible moves. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classgame_1_1_checker_piece_ad5d39f1689d41459ef31e8bc7b3c62a1} 
+\index{game.CheckerPiece@{game.CheckerPiece}!CheckerPiece@{CheckerPiece}}
+\index{CheckerPiece@{CheckerPiece}!game.CheckerPiece@{game.CheckerPiece}}
+\doxysubsubsection{CheckerPiece()}
+{\footnotesize\ttfamily game.\+Checker\+Piece.\+Checker\+Piece (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})}
+
+Constructs a new Checker\+Piece object with the given color and sets the king flag to false. 
+\begin{DoxyParams}{Parameters}
+{\em color} & the color of the piece ("{}\+RED"{} or "{}\+BLACK"{}) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\label{classgame_1_1_checker_piece_af9d7343c5727b618ad811c77571afa30} 
+\index{game.CheckerPiece@{game.CheckerPiece}!crown@{crown}}
+\index{crown@{crown}!game.CheckerPiece@{game.CheckerPiece}}
+\doxysubsubsection{crown()}
+{\footnotesize\ttfamily void game.\+Checker\+Piece.\+crown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Crowns the piece as a king. \label{classgame_1_1_checker_piece_a915b251e7a5608e0e4afac3f3b7bd345} 
+\index{game.CheckerPiece@{game.CheckerPiece}!getColor@{getColor}}
+\index{getColor@{getColor}!game.CheckerPiece@{game.CheckerPiece}}
+\doxysubsubsection{getColor()}
+{\footnotesize\ttfamily String game.\+Checker\+Piece.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the color of the piece. \begin{DoxyReturn}{Returns}
+the color of the piece 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_piece_a0e3b26c3aa4bc63453f1414177fcc1b3} 
+\index{game.CheckerPiece@{game.CheckerPiece}!getList@{getList}}
+\index{getList@{getList}!game.CheckerPiece@{game.CheckerPiece}}
+\doxysubsubsection{getList()}
+{\footnotesize\ttfamily List$<$ int[$\,$]$>$ game.\+Checker\+Piece.\+get\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of possible moves for the piece. \begin{DoxyReturn}{Returns}
+the list of possible moves 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_piece_a5152d630af734a6d3e096c777ee907c8} 
+\index{game.CheckerPiece@{game.CheckerPiece}!getPossibleMoves@{getPossibleMoves}}
+\index{getPossibleMoves@{getPossibleMoves}!game.CheckerPiece@{game.CheckerPiece}}
+\doxysubsubsection{getPossibleMoves()}
+{\footnotesize\ttfamily List$<$ int[$\,$]$>$ game.\+Checker\+Piece.\+get\+Possible\+Moves (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\textbf{ Checker\+Board}}]{board }\end{DoxyParamCaption})}
+
+Returns a list of possible moves for the piece at the given position on the board. 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the position \\
+\hline
+{\em y} & the y-\/coordinate of the position \\
+\hline
+{\em board} & the Checker\+Board object representing the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of possible moves for the piece at the given position 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_piece_a25f880901787019bbdfb0b358d79c9fa} 
+\index{game.CheckerPiece@{game.CheckerPiece}!isKing@{isKing}}
+\index{isKing@{isKing}!game.CheckerPiece@{game.CheckerPiece}}
+\doxysubsubsection{isKing()}
+{\footnotesize\ttfamily boolean game.\+Checker\+Piece.\+is\+King (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns whether the piece is a king. \begin{DoxyReturn}{Returns}
+true if the piece is a king, false otherwise 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_piece_a39e29f149392930d669ba5a59c141f9b} 
+\index{game.CheckerPiece@{game.CheckerPiece}!setList@{setList}}
+\index{setList@{setList}!game.CheckerPiece@{game.CheckerPiece}}
+\doxysubsubsection{setList()}
+{\footnotesize\ttfamily void game.\+Checker\+Piece.\+set\+List (\begin{DoxyParamCaption}\item[{List$<$ int[$\,$]$>$}]{list }\end{DoxyParamCaption})}
+
+Sets the list of possible moves for the piece. 
+\begin{DoxyParams}{Parameters}
+{\em list} & the list of possible moves \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/game/\textbf{ Checker\+Piece.\+java}\end{DoxyCompactItemize}

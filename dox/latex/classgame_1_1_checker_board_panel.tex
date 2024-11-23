@@ -1,0 +1,90 @@
+\doxysection{game.\+Checker\+Board\+Panel Class Reference}
+\label{classgame_1_1_checker_board_panel}\index{game.CheckerBoardPanel@{game.CheckerBoardPanel}}
+Inheritance diagram for game.\+Checker\+Board\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgame_1_1_checker_board_panel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Checker\+Board\+Panel} (\textbf{ Checker\+Board} board, \textbf{ Game} game, \textbf{ Game\+Frame} game\+Frame)
+\item 
+void \textbf{ set\+Board} (\textbf{ Checker\+Board} board)
+\item 
+void \textbf{ update\+Board} ()
+\item 
+\textbf{ Checker\+Board} \textbf{ get\+Board} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ paint\+Component} (Graphics g)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Checker\+Board\+Panel class represents the panel that displays the checkerboard. It extends the JPanel class and contains a Checker\+Board object to represent the board, a JLabel to display a message if a capture move is required, and fields to keep track of the selected position. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classgame_1_1_checker_board_panel_a28dd52d519dc2aa80a0a45fa61b7773b} 
+\index{game.CheckerBoardPanel@{game.CheckerBoardPanel}!CheckerBoardPanel@{CheckerBoardPanel}}
+\index{CheckerBoardPanel@{CheckerBoardPanel}!game.CheckerBoardPanel@{game.CheckerBoardPanel}}
+\doxysubsubsection{CheckerBoardPanel()}
+{\footnotesize\ttfamily game.\+Checker\+Board\+Panel.\+Checker\+Board\+Panel (\begin{DoxyParamCaption}\item[{\textbf{ Checker\+Board}}]{board,  }\item[{\textbf{ Game}}]{game,  }\item[{\textbf{ Game\+Frame}}]{game\+Frame }\end{DoxyParamCaption})}
+
+Constructs a new Checker\+Board\+Panel object with the given Checker\+Board, Game, and Game\+Frame objects. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the Checker\+Board object representing the board \\
+\hline
+{\em game} & the Game object representing the game \\
+\hline
+{\em game\+Frame} & the Game\+Frame object representing the game frame \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\label{classgame_1_1_checker_board_panel_a17210a3af71d5dd3f1d06b93a3d3c630} 
+\index{game.CheckerBoardPanel@{game.CheckerBoardPanel}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!game.CheckerBoardPanel@{game.CheckerBoardPanel}}
+\doxysubsubsection{getBoard()}
+{\footnotesize\ttfamily \textbf{ Checker\+Board} game.\+Checker\+Board\+Panel.\+get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the Checker\+Board object representing the board. \begin{DoxyReturn}{Returns}
+the Checker\+Board object representing the board 
+\end{DoxyReturn}
+\label{classgame_1_1_checker_board_panel_a89d926449c6800a737e50eac78859e99} 
+\index{game.CheckerBoardPanel@{game.CheckerBoardPanel}!paintComponent@{paintComponent}}
+\index{paintComponent@{paintComponent}!game.CheckerBoardPanel@{game.CheckerBoardPanel}}
+\doxysubsubsection{paintComponent()}
+{\footnotesize\ttfamily void game.\+Checker\+Board\+Panel.\+paint\+Component (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Paints the checkerboard and pieces on the panel. 
+\begin{DoxyParams}{Parameters}
+{\em g} & the Graphics object used to paint the components \\
+\hline
+\end{DoxyParams}
+\label{classgame_1_1_checker_board_panel_a6e1c03b8665225f2ecb7f1e60a0ec76a} 
+\index{game.CheckerBoardPanel@{game.CheckerBoardPanel}!setBoard@{setBoard}}
+\index{setBoard@{setBoard}!game.CheckerBoardPanel@{game.CheckerBoardPanel}}
+\doxysubsubsection{setBoard()}
+{\footnotesize\ttfamily void game.\+Checker\+Board\+Panel.\+set\+Board (\begin{DoxyParamCaption}\item[{\textbf{ Checker\+Board}}]{board }\end{DoxyParamCaption})}
+
+Sets the Checker\+Board object for the panel. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the Checker\+Board object representing the board \\
+\hline
+\end{DoxyParams}
+\label{classgame_1_1_checker_board_panel_ad4376372bc89e807635be3a8016ae15a} 
+\index{game.CheckerBoardPanel@{game.CheckerBoardPanel}!updateBoard@{updateBoard}}
+\index{updateBoard@{updateBoard}!game.CheckerBoardPanel@{game.CheckerBoardPanel}}
+\doxysubsubsection{updateBoard()}
+{\footnotesize\ttfamily void game.\+Checker\+Board\+Panel.\+update\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the board by repainting the panel. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/game/\textbf{ Checker\+Board\+Panel.\+java}\end{DoxyCompactItemize}

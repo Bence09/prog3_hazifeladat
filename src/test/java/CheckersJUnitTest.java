@@ -7,6 +7,10 @@ import game.*;
 import javax.swing.*;
 import java.io.File;
 
+/**
+ * The CheckersJUnitTest class contains JUnit tests for the CheckerPiece, CheckerBoard, and Game classes.
+ * The tests cover the CheckerPiece class methods, the default table setup in the CheckerBoard class,
+ */
 public class CheckersJUnitTest {
     private CheckerBoard board;
     private CheckerPiece redPiece;
