@@ -1,5 +1,6 @@
 package game;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,18 +61,14 @@ public class CheckerBoard {
      * @param endY the y-coordinate of the end position
      */
     public void movePiece(int startX, int startY, int endX, int endY) {
-        // Logic to move a piece and handle captures
-        board[endX][endY] = board[startX][startY];
-        board[startX][startY] = null;
-
-        // Update piece position in the list
-        for (int[] pos : piecePositions) {
-            if (pos[0] == startX && pos[1] == startY) {
-                pos[0] = endX;
-                pos[1] = endY;
-                break;
-            }
+        CheckerPiece piece = getPiece(startX, startY);
+        if (piece == null || !isMoveValid(startX, startY, endX, endY)) {
+            return;
         }
+
+        board[endX][endY] = piece;
+        board[startX][startY] = null;
+        reconstructPiecePositions();
 
         // Handle captures
         if (Math.abs(endX - startX) == 2 && Math.abs(endY - startY) == 2) {
@@ -79,15 +76,19 @@ public class CheckerBoard {
             int midY = (startY + endY) / 2;
             board[midX][midY] = null;
             piecePositions.removeIf(pos -> pos[0] == midX && pos[1] == midY);
+
+            // Check for additional captures
+            List<int[]> additionalMoves = piece.getPossibleMoves(endX, endY, this, true);
+            if (!additionalMoves.isEmpty()) {
+                handleAdditionalCapture(endX, endY);
+            }
         }
 
         // Check for king
-        if (endX == 0 && board[endX][endY].getColor().equals("RED")
-                || endX == 7 && board[endX][endY].getColor().equals("BLACK")) {
-            board[endX][endY].crown();
+        if (endX == 0 && piece.getColor().equals("RED") || endX == 7 && piece.getColor().equals("BLACK")) {
+            piece.crown();
         }
     }
-
     /**
      * Returns a list of possible moves for the piece at the given position on the board.
      * @param x the x-coordinate of the position
@@ -97,7 +98,7 @@ public class CheckerBoard {
     public List<int[]> getPossibleMoves(int x, int y) {
         CheckerPiece piece = getPiece(x, y);
         if (piece != null) {
-            return piece.getPossibleMoves(x, y, this);
+            return piece.getPossibleMoves(x, y, this, false);
         }
         return new ArrayList<>();
     }
@@ -132,7 +133,6 @@ public class CheckerBoard {
         }
         return false;
     }
-
     /**
      * Prints the positions of the pieces on the board.
      */
@@ -184,7 +184,7 @@ public class CheckerBoard {
         for (int[] pos : piecePositions) {
             CheckerPiece piece = getPiece(pos[0], pos[1]);
             if (piece != null && piece.getColor().equals(color)) {
-                List<int[]> moves = piece.getPossibleMoves(pos[0], pos[1], this);
+                List<int[]> moves = piece.getPossibleMoves(pos[0], pos[1], this, true);
                 for (int[] move : moves) {
                     if (Math.abs(move[0] - pos[0]) == 2) { // Capture move
                         return true;
@@ -193,6 +193,29 @@ public class CheckerBoard {
             }
         }
         return false;
+    }
+
+    public void handleAdditionalCapture(int x, int y) {
+        System.out.println("Handling additional capture for piece at (" + x + ", " + y + ")");
+
+        // Check for all possible capture moves
+        List<int[]> possibleMoves = getPossibleMoves(x, y);
+        boolean additionalCapture = false;
+
+        for (int[] move : possibleMoves) {
+            if (Math.abs(move[0] - x) == 2) {
+                movePiece(x, y, move[0], move[1]);
+                additionalCapture = true;
+                break;
+            }
+        }
+
+        if (additionalCapture) {
+            handleAdditionalCapture(x, y); // Recursively handle additional captures
+        } else {
+            JLabel label = new JLabel("Surprise! You have multiple capture moves!");
+            JOptionPane.showMessageDialog(null, label);
+        }
     }
 
 }

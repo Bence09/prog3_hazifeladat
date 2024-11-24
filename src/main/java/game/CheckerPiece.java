@@ -71,18 +71,20 @@ public class CheckerPiece {
      * @param board the CheckerBoard object representing the board
      * @return a list of possible moves for the piece at the given position
      */
-    public List<int[]> getPossibleMoves(int x, int y, CheckerBoard board) {
+    public List<int[]> getPossibleMoves(int x, int y, CheckerBoard board, boolean isCaptureMove) {
         List<int[]> moves = new ArrayList<>();
         int direction = color.equals("RED") ? -1 : 1;
 
-        // Normal moves
-        addMoveIfValid(moves, x + direction, y - 1, board);
-        addMoveIfValid(moves, x + direction, y + 1, board);
+        if (!isCaptureMove) {
+            // Normal moves
+            addMoveIfValid(moves, x + direction, y - 1, board);
+            addMoveIfValid(moves, x + direction, y + 1, board);
 
-        // King moves
-        if (isKing) {
-            addMoveIfValid(moves, x - direction, y - 1, board);
-            addMoveIfValid(moves, x - direction, y + 1, board);
+            // King moves
+            if (isKing) {
+                addMoveIfValid(moves, x - direction, y - 1, board);
+                addMoveIfValid(moves, x - direction, y + 1, board);
+            }
         }
 
         // Capture moves
@@ -121,6 +123,7 @@ public class CheckerPiece {
     private void addCaptureMoveIfValid(List<int[]> moves, int startX, int startY, int endX, int endY, CheckerBoard board) {
         int midX = (startX + endX) / 2;
         int midY = (startY + endY) / 2;
+        // Check if the end position is valid and empty, and if the middle position has an opponent's piece
         if (endX >= 0 && endX < 8 && endY >= 0 && endY < 8 && board.getPiece(endX, endY) == null) {
             CheckerPiece midPiece = board.getPiece(midX, midY);
             if (midPiece != null && !midPiece.getColor().equals(this.color)) {

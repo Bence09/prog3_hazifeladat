@@ -169,7 +169,7 @@ public class CheckerBoardPanel extends JPanel {
         if (selectedX != -1 && selectedY != -1) {
             CheckerPiece piece = board.getPiece(selectedX, selectedY);
             if (piece != null) {
-                List<int[]> moves = piece.getPossibleMoves(selectedX, selectedY, board);
+                List<int[]> moves = piece.getPossibleMoves(selectedX, selectedY, board, false);
                 if (board.hasCaptureMoves(piece.getColor())) {
                     // Filter out non-capture moves if there are capture moves available
                     moves.removeIf(move -> Math.abs(move[0] - selectedX) != 2);

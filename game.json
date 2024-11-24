@@ -60,17 +60,9 @@
           "list": []
         },
         null,
-        {
-          "isKing": false,
-          "color": "BLACK",
-          "list": []
-        },
         null,
-        {
-          "isKing": false,
-          "color": "BLACK",
-          "list": []
-        },
+        null,
+        null,
         null,
         {
           "isKing": false,
@@ -85,7 +77,11 @@
         null,
         null,
         null,
-        null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
         null,
         null
       ],
@@ -94,7 +90,11 @@
         null,
         null,
         null,
-        null,
+        {
+          "isKing": false,
+          "color": "BLACK",
+          "list": []
+        },
         null,
         null,
         null
@@ -107,11 +107,7 @@
           "list": []
         },
         null,
-        {
-          "isKing": false,
-          "color": "RED",
-          "list": []
-        },
+        null,
         null,
         {
           "isKing": false,
@@ -216,12 +212,12 @@
         0
       ],
       [
-        2,
-        2
+        4,
+        4
       ],
       [
-        2,
-        4
+        3,
+        5
       ],
       [
         2,
@@ -230,10 +226,6 @@
       [
         5,
         1
-      ],
-      [
-        5,
-        3
       ],
       [
         5,
@@ -278,6 +270,6 @@
     ]
   },
   "currentPlayer": "RED",
-  "redCaptured": 0,
+  "redCaptured": 1,
   "blackCaptured": 0
 }
